@@ -18,7 +18,7 @@
 
         body {
             margin: 0;
-            background-image: url("pergamen6.jpg");
+            background-image: url("pergamen9.png");
             background-size: cover;
             background-attachment: fixed;
             color: #2b2118;
@@ -90,14 +90,13 @@
 
         .initial-svg {
             width: 100px;
-            /* velikost si doladíš */
             vertical-align: bottom;
             margin-right: 2px;
         }
 
 
         .erb {
-            width: 200px;
+            width: 280px;
             display: block;
             margin: 0 auto 20px auto;
         }
@@ -134,7 +133,24 @@
 <body>
 
     <header>
-        <img src="erb.png" class="erb">
+        <img id="erb" src="erb.png" class="erb" style="cursor:pointer;">
+
+        <audio id="hudba" loop>
+            <source src="music.mp3" type="audio/mp3">
+        </audio>
+
+        <script>
+            const erb = document.getElementById("erb");
+            const hudba = document.getElementById("hudba");
+
+            erb.addEventListener("click", () => {
+                if (hudba.paused) {
+                    hudba.play();
+                } else {
+                    hudba.pause();
+                }
+            });
+        </script>
         <img src="inicialy.svg" class="inicialy">
         <p>Středověká svatba</p>
         <p>Datum: 3.10.2026</p>
