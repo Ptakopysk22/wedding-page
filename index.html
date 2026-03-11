@@ -18,7 +18,7 @@
 
         body {
             margin: 0;
-            background-image: url("pergamen9.png");
+            background-image: url("pergamen10.png");
             background-size: cover;
             background-attachment: fixed;
             color: #2b2118;
@@ -32,7 +32,7 @@
             background-image: url("pergamen2.jpg");
             background-size: cover;
             background-position: center;
-            padding: 40px 20px;
+            padding: 40px 20px 20px 20px;
         }
 
         header h1 {
@@ -74,12 +74,22 @@
             max-width: 700px;
             margin: auto;
             padding: 40px 20px;
-            border-bottom: 1px solid #ddd;
             scroll-margin-top: 65px;
         }
 
-        h2 {
-            margin-top: 0;
+        .section-header {
+            display: flex;
+            align-items: baseline;
+        }
+
+        .section-header h2 {
+            margin: 0;
+        }
+
+        .section-icon {
+            margin-left: auto;
+            width: 200px;
+            padding-right: 30px;
         }
 
         .dropcap-title {
@@ -127,6 +137,48 @@
             background-position: center;
             color: white;
         }
+
+        a {
+            color: #b89b40;
+            text-decoration: none;
+            font-weight: bold;
+            /* border-bottom: 1px dotted #b89b40;*/
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        /*.divider {
+            text-align: center;
+            margin: 20px 0;
+        }*/
+
+        .divider {
+            display: flex;
+            align-items: center;
+            max-width: 700px;
+            margin: 15px auto;
+            padding: 0 20px;
+            color: #b89b40;
+        }
+
+        .line {
+            flex: 1;
+            border-top: 1px solid currentColor;
+        }
+
+        .diamond {
+            font-size: 10px;
+            color: currentColor;
+            line-height: 1;
+        }
+
+        .ornament {
+            margin: 0 10px;
+            font-size: 22px;
+            color: currentColor;
+        }
     </style>
 </head>
 
@@ -153,68 +205,162 @@
         </script>
         <img src="inicialy.svg" class="inicialy">
         <p>Středověká svatba</p>
-        <p>Datum: 3.10.2026</p>
-        <p>Místo: Náš hrad</p>
-        <p>──────────────────────── ❦ ────────────────────────</p>
+        <p>
+            Datum:
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Středověká+svatba+M+%26+F&dates=20260926T120000/20260926T230000&details=Středověká+svatba&location=Zřícenina+hradu+Borotín"
+                target="_blank">
+                26.9.2026
+            </a>
+        </p>
+        <p>
+            Místo:
+            <a href="https://www.google.com/maps/place/Hrad+Borot%C3%ADn/@49.4996486,14.629161,17z/data=!4m14!1m7!3m6!1s0x470c9eaa65a14c21:0xc14c51b9e9a14e9e!2sHrad+Borot%C3%ADn!8m2!3d49.4996486!4d14.629161!16s%2Fg%2F11b6s1ryj3!3m5!1s0x470c9eaa65a14c21:0xc14c51b9e9a14e9e!8m2!3d49.4996486!4d14.629161!16s%2Fg%2F11b6s1ryj3?entry=ttu&g_ep=EgoyMDI2MDMwNC4xIKXMDSoASAFQAw%3D%3D"
+                target="_blank">
+                Zřícenina hradu Borotín
+            </a>
+        </p>
+
+        <div class="divider" style="color:white; max-width: 500px;">
+            <span class="diamond">◆</span>
+            <div class="line"></div>
+            <span class="ornament">❦</span>
+            <div class="line"></div>
+            <span class="diamond">◆</span>
+        </div>
     </header>
 
     <nav>
         <a href="#misto">Místo</a>
-        <a href="#ubytovani">Ubytování</a>
         <a href="#doprava">Doprava</a>
+        <a href="#ubytovani">Ubytování</a>
         <a href="#obcerstveni">Občerstvení</a>
         <a href="#dresscode">Dress code</a>
         <a href="#rsvp">RSVP</a>
     </nav>
 
     <section id="misto">
-        <h2><span class="dropcap-title">M</span>ísto a czas</h2>
-        <p>
-            Obřad začne v XX:XX.
-            Prosíme o příchod alespoň 20 minut před začátkem.
-        </p>
-        <p>
-            Adresa: DOPLŇ ADRESU
-        </p>
+        <div class="section-header">
+            <h2><span class="dropcap-title">M</span>ísto a czas</h2>
 
-        <!-- Zde můžeš vložit Google Maps iframe -->
+            <img src="hrad.png" class="section-icon">
+        </div>
+        <p>
+            Příjezd hostů započne v hodině jedenácté dopolední.
+            Místem konání jest zřícenina hradu Borotín, kde se pod širým nebem sejdeme ku oslavě sňatku.
+        </p>
     </section>
 
-    <section id="ubytovani">
-        <h2><span class="dropcap-title">U</span>bytowani</h2>
-        <p>
-            Informace o možnostech přespání doplníme zde.
-            Pokud budete chtít rezervovat místo, dejte nám vědět.
-        </p>
-    </section>
+    <div class="divider">
+        <span class="diamond">◆</span>
+        <div class="line"></div>
+        <span class="ornament">❦</span>
+        <div class="line"></div>
+        <span class="diamond">◆</span>
+    </div>
 
     <section id="doprava">
-        <h2><span class="dropcap-title">D</span>oprawa</h2>
+        <div class="section-header">
+            <h2><span class="dropcap-title">D</span>oprawa</h2>
+
+            <img src="kun.png" class="section-icon">
+        </div>
 
         <p>
-            Parkování je možné přímo u místa konání.
-            Prosíme řiďte se pokyny pořadatelů.
+            Své koně, povozy i jiné podivuhodné dopravní stroje lze odstavit přímo u místa konání.
         </p>
     </section>
+
+    <div class="divider">
+        <span class="diamond">◆</span>
+        <div class="line"></div>
+        <span class="ornament">❦</span>
+        <div class="line"></div>
+        <span class="diamond">◆</span>
+    </div>
+
+
+    <section id="ubytovani">
+        <div class="section-header">
+            <h2><span class="dropcap-title">U</span>bytowani</h2>
+
+            <img src="hostinec.png" class="section-icon">
+        </div>
+
+        <p>
+            Pro nejbližší rodinu jest na přilehlém barokním statku připraveno několik loží.
+            Nebyl-li jsi o této výsadě zpraven osobně, počítej spíše s noclehem v pokrový – ve vlastním spacáku,
+            ve společnosti ostatních svatebčanů a možná i s trochou ranního brumlání.
+        </p>
+        <p>
+            Další možností jest rozbít vlastní stan na louce u statku a přečkat noc jako pravý poutník.
+        </p>
+    </section>
+
+    <div class="divider">
+        <span class="diamond">◆</span>
+        <div class="line"></div>
+        <span class="ornament">❦</span>
+        <div class="line"></div>
+        <span class="diamond">◆</span>
+    </div>
 
     <section id="obcerstveni">
-        <h2><span class="dropcap-title">O</span> strawie a napoji</h2>
+        <div class="section-header">
+            <h2><span class="dropcap-title">O</span> strawie a napoji</h2>
+
+            <img src="prase.png" class="section-icon">
+        </div>
+
         <p>
-            Na místě bude zajištěno občerstvení po celý den.
+            Po celý den bude zajištěna krmě i nápoje, aby nikdo z hostí nestrádal hladem
+            ani žízní – což by byla věc vskutku neveselá.
         </p>
         <p>
-            Pokud přivezete vlastní dobroty, budeme rádi –
-            detaily upřesníme zde.
+            Přivezeš-li vlastní dobroty, sladké či slané, budeme potěšeni
+            a rádi jimi doplníme večerní hodování.
         </p>
     </section>
 
+    <div class="divider">
+        <span class="diamond">◆</span>
+        <div class="line"></div>
+        <span class="ornament">❦</span>
+        <div class="line"></div>
+        <span class="diamond">◆</span>
+    </div>
+
     <section id="dresscode">
-        <h2><span class="dropcap-title">D</span>ress code</h2>
+
+        <div class="section-header">
+            <h2><span class="dropcap-title">D</span>ress code</h2>
+
+            <img src="kostym.png" class="section-icon">
+        </div>
+
         <p>
-            Budeme rádi, pokud se naladíte do lehce středověkého stylu.
-            Není to povinnost, ale potěší nás to.
+            Svatba se ponese v duchu časů středověkých a budeme potěšeni,
+            přizpůsobíš-li tomu své vzezření.
+            Alespoň jednoduchý oděv v tomto duchu jest vítán.
+        </p>
+        <p>
+            Fantazii se meze nekladou: přijď jako měšťan, sedlák,
+            šlechtic z dalekého království, člen některého cechu
+            či třeba morový doktor (jen prosíme bez skutečné nákazy).
+        </p>
+        <p>
+            Bílá barva ve velkých plochách jest vyhrazena nevěstě.
+            Barvou svatby jest smaragdová (temně zelená),
+            můžeš ji tedy zakomponovat v některém detailu svého oděvu.
         </p>
     </section>
+
+    <div class="divider">
+        <span class="diamond">◆</span>
+        <div class="line"></div>
+        <span class="ornament">❦</span>
+        <div class="line"></div>
+        <span class="diamond">◆</span>
+    </div>
 
     <section id="rsvp">
         <h2>Potvrzení účasti</h2>
@@ -226,6 +372,14 @@
             Potvrdit účast
         </a>
     </section>
+
+    <div class="divider">
+        <span class="diamond">◆</span>
+        <div class="line"></div>
+        <span class="ornament">❦</span>
+        <div class="line"></div>
+        <span class="diamond">◆</span>
+    </div>
 
     <section id="pribeh">
         <h2>Příběh</h2>
