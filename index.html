@@ -46,6 +46,7 @@
             font-family: 'UnifrakturCook', cursive;
             font-weight: 600;
             letter-spacing: 1px;
+            margin-bottom: 8px;
         }
 
         header p {
@@ -73,7 +74,7 @@
         section {
             max-width: 700px;
             margin: auto;
-            padding: 40px 20px;
+            padding: 10px 5px;
             scroll-margin-top: 65px;
         }
 
@@ -86,11 +87,35 @@
             margin: 0;
         }
 
-        .section-icon {
+        /*.section-icon {
             margin-left: auto;
             width: 200px;
             padding-right: 30px;
+        }*/
+        .section-icon {
+            width: 180px;
+            padding: 0;
+            margin-top: 0;
         }
+
+        .section-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .section-content p {
+            flex: 1;
+        }
+
+        .reverse {
+            flex-direction: row-reverse;
+        }
+
+        .text-block {
+            flex: 1;
+        }
+
 
         .dropcap-title {
             font-family: 'UnifrakturCook', cursive;
@@ -159,7 +184,7 @@
             align-items: center;
             max-width: 700px;
             margin: 15px auto;
-            padding: 0 20px;
+            /*padding: 0 20px;*/
             color: #b89b40;
         }
 
@@ -239,15 +264,19 @@
     </nav>
 
     <section id="misto">
-        <div class="section-header">
-            <h2><span class="dropcap-title">M</span>ísto a czas</h2>
+
+        <h2><span class="dropcap-title">M</span>ísto a czas</h2>
+
+        <div class="section-content">
+
+            <p>
+                Příjezd hostů započne v hodině jedenácté dopolední.
+                Místem konání jest zřícenina hradu Borotín, kde se pod širým nebem sejdeme ku oslavě sňatku.
+            </p>
 
             <img src="hrad.png" class="section-icon">
+
         </div>
-        <p>
-            Příjezd hostů započne v hodině jedenácté dopolední.
-            Místem konání jest zřícenina hradu Borotín, kde se pod širým nebem sejdeme ku oslavě sňatku.
-        </p>
     </section>
 
     <div class="divider">
@@ -259,15 +288,17 @@
     </div>
 
     <section id="doprava">
-        <div class="section-header">
-            <h2><span class="dropcap-title">D</span>oprawa</h2>
+        <h2><span class="dropcap-title">D</span>oprawa</h2>
+
+        <div class="section-content reverse">
+
+            <p>
+                Své koně, povozy i jiné podivuhodné dopravní stroje lze odstavit přímo u místa konání.
+            </p>
 
             <img src="kun.png" class="section-icon">
-        </div>
 
-        <p>
-            Své koně, povozy i jiné podivuhodné dopravní stroje lze odstavit přímo u místa konání.
-        </p>
+        </div>
     </section>
 
     <div class="divider">
@@ -280,20 +311,26 @@
 
 
     <section id="ubytovani">
-        <div class="section-header">
-            <h2><span class="dropcap-title">U</span>bytowani</h2>
 
+        <h2><span class="dropcap-title">U</span>bytowani</h2>
+
+        <div class="section-content">
+            <div class="text-block">
+                <p>
+                    Pro nejbližší rodinu jest na přilehlém barokním statku připraveno několik loží.
+                    Nebyl-li jsi o této výsadě zpraven osobně, počítej spíše s noclehem v pokrový – ve vlastním spacáku,
+                    ve společnosti ostatních svatebčanů a možná i s trochou ranního brumlání.
+                </p>
+                <p>
+                    Další možností jest rozbít vlastní stan na louce u statku a přečkat noc jako pravý poutník.
+                </p>
+            </div>
             <img src="hostinec.png" class="section-icon">
+
         </div>
 
-        <p>
-            Pro nejbližší rodinu jest na přilehlém barokním statku připraveno několik loží.
-            Nebyl-li jsi o této výsadě zpraven osobně, počítej spíše s noclehem v pokrový – ve vlastním spacáku,
-            ve společnosti ostatních svatebčanů a možná i s trochou ranního brumlání.
-        </p>
-        <p>
-            Další možností jest rozbít vlastní stan na louce u statku a přečkat noc jako pravý poutník.
-        </p>
+
+
     </section>
 
     <div class="divider">
@@ -305,20 +342,27 @@
     </div>
 
     <section id="obcerstveni">
-        <div class="section-header">
-            <h2><span class="dropcap-title">O</span> strawie a napoji</h2>
+        <h2><span class="dropcap-title">O</span> strawie a napoji</h2>
+
+        </div>
+        <div class="section-content reverse">
+
+            <div class="text-block">
+                <p>
+                    Po celý den bude zajištěna krmě i nápoje, aby nikdo z hostí
+                    nestrádal hladem ani žízní – což by byla věc vskutku neveselá.
+                </p>
+
+                <p>
+                    Přivezeš-li vlastní dobroty, sladké či slané, budeme potěšeni
+                    a rádi jimi doplníme večerní hodování.
+                </p>
+            </div>
 
             <img src="prase.png" class="section-icon">
+
         </div>
 
-        <p>
-            Po celý den bude zajištěna krmě i nápoje, aby nikdo z hostí nestrádal hladem
-            ani žízní – což by byla věc vskutku neveselá.
-        </p>
-        <p>
-            Přivezeš-li vlastní dobroty, sladké či slané, budeme potěšeni
-            a rádi jimi doplníme večerní hodování.
-        </p>
     </section>
 
     <div class="divider">
@@ -331,27 +375,32 @@
 
     <section id="dresscode">
 
-        <div class="section-header">
-            <h2><span class="dropcap-title">D</span>ress code</h2>
+        <h2><span class="dropcap-title">D</span>ress code</h2>
+
+        <div class="section-content">
+
+            <div class="text-block">
+                <p>
+                    Svatba se ponese v duchu časů středověkých a budeme potěšeni,
+                    přizpůsobíš-li tomu své vzezření.
+                    Alespoň jednoduchý oděv v tomto duchu jest vítán.
+                </p>
+                <p>
+                    Fantazii se meze nekladou: přijď jako měšťan, sedlák,
+                    šlechtic z dalekého království, člen některého cechu
+                    či třeba morový doktor (jen prosíme bez skutečné nákazy).
+                </p>
+                <p>
+                    Bílá barva ve velkých plochách jest vyhrazena nevěstě.
+                    Barvou svatby jest smaragdová (temně zelená),
+                    můžeš ji tedy zakomponovat v některém detailu svého oděvu.
+                </p>
+            </div>
 
             <img src="kostym.png" class="section-icon">
+
         </div>
 
-        <p>
-            Svatba se ponese v duchu časů středověkých a budeme potěšeni,
-            přizpůsobíš-li tomu své vzezření.
-            Alespoň jednoduchý oděv v tomto duchu jest vítán.
-        </p>
-        <p>
-            Fantazii se meze nekladou: přijď jako měšťan, sedlák,
-            šlechtic z dalekého království, člen některého cechu
-            či třeba morový doktor (jen prosíme bez skutečné nákazy).
-        </p>
-        <p>
-            Bílá barva ve velkých plochách jest vyhrazena nevěstě.
-            Barvou svatby jest smaragdová (temně zelená),
-            můžeš ji tedy zakomponovat v některém detailu svého oděvu.
-        </p>
     </section>
 
     <div class="divider">
