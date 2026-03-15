@@ -184,7 +184,7 @@
             align-items: center;
             max-width: 700px;
             margin: 15px auto;
-            /*padding: 0 20px;*/
+            padding: 0 20px;
             color: #b89b40;
         }
 
@@ -203,6 +203,22 @@
             margin: 0 10px;
             font-size: 22px;
             color: currentColor;
+        }
+
+        .content-wrapper {
+            position: relative;
+            max-width: 900px;
+            margin: auto;
+            padding-left: 120px;
+        }
+
+        .side-ornament {
+            position: absolute;
+            left: 60px;
+            top: 0;
+            height: 100%;
+            width: auto;
+            pointer-events: none;
         }
     </style>
 </head>
@@ -263,105 +279,109 @@
         <a href="#rsvp">RSVP</a>
     </nav>
 
-    <section id="misto">
+    <div class="content-wrapper">
 
-        <h2><span class="dropcap-title">M</span>ísto a czas</h2>
+        <img src="hruska2.png" class="side-ornament">
 
-        <div class="section-content">
+        <section id="misto">
 
-            <p>
-                Příjezd hostů započne v hodině jedenácté dopolední.
-                Místem konání jest zřícenina hradu Borotín, kde se pod širým nebem sejdeme ku oslavě sňatku.
-            </p>
+            <h2><span class="dropcap-title">M</span>ísto a czas</h2>
 
-            <img src="hrad.png" class="section-icon">
+            <div class="section-content">
 
-        </div>
-    </section>
-
-    <div class="divider">
-        <span class="diamond">◆</span>
-        <div class="line"></div>
-        <span class="ornament">❦</span>
-        <div class="line"></div>
-        <span class="diamond">◆</span>
-    </div>
-
-    <section id="doprava">
-        <h2><span class="dropcap-title">D</span>oprawa</h2>
-
-        <div class="section-content reverse">
-
-            <p>
-                Své koně, povozy i jiné podivuhodné dopravní stroje lze odstavit přímo u místa konání.
-            </p>
-
-            <img src="kun.png" class="section-icon">
-
-        </div>
-    </section>
-
-    <div class="divider">
-        <span class="diamond">◆</span>
-        <div class="line"></div>
-        <span class="ornament">❦</span>
-        <div class="line"></div>
-        <span class="diamond">◆</span>
-    </div>
-
-
-    <section id="ubytovani">
-
-        <h2><span class="dropcap-title">U</span>bytowani</h2>
-
-        <div class="section-content">
-            <div class="text-block">
                 <p>
-                    Pro nejbližší rodinu jest na přilehlém barokním statku připraveno několik loží.
-                    Nebyl-li jsi o této výsadě zpraven osobně, počítej spíše s noclehem v pokrový – ve vlastním spacáku,
-                    ve společnosti ostatních svatebčanů a možná i s trochou ranního brumlání.
+                    Příjezd hostů započne v hodině jedenácté dopolední.
+                    Místem konání jest zřícenina hradu Borotín, kde se pod širým nebem sejdeme ku oslavě sňatku.
                 </p>
-                <p>
-                    Další možností jest rozbít vlastní stan na louce u statku a přečkat noc jako pravý poutník.
-                </p>
+
+                <img src="hrad.png" class="section-icon">
+
             </div>
-            <img src="hostinec.png" class="section-icon">
+        </section>
 
+        <div class="divider">
+            <span class="diamond">◆</span>
+            <div class="line"></div>
+            <span class="ornament">❦</span>
+            <div class="line"></div>
+            <span class="diamond">◆</span>
+        </div>
+
+        <section id="doprava">
+            <h2><span class="dropcap-title">D</span>oprawa</h2>
+
+            <div class="section-content reverse">
+
+                <p>
+                    Své koně, povozy i jiné podivuhodné dopravní stroje lze odstavit přímo u místa konání.
+                </p>
+
+                <img src="kun.png" class="section-icon">
+
+            </div>
+        </section>
+
+        <div class="divider">
+            <span class="diamond">◆</span>
+            <div class="line"></div>
+            <span class="ornament">❦</span>
+            <div class="line"></div>
+            <span class="diamond">◆</span>
         </div>
 
 
+        <section id="ubytovani">
 
-    </section>
+            <h2><span class="dropcap-title">U</span>bytowani</h2>
 
-    <div class="divider">
-        <span class="diamond">◆</span>
-        <div class="line"></div>
-        <span class="ornament">❦</span>
-        <div class="line"></div>
-        <span class="diamond">◆</span>
-    </div>
+            <div class="section-content">
+                <div class="text-block">
+                    <p>
+                        Pro nejbližší rodinu jest na přilehlém barokním statku připraveno několik loží.
+                        Nebyl-li jsi o této výsadě zpraven osobně, počítej spíše s noclehem v pokrový – ve vlastním
+                        spacáku,
+                        ve společnosti ostatních svatebčanů a možná i s trochou ranního brumlání.
+                    </p>
+                    <p>
+                        Další možností jest rozbít vlastní stan na louce u statku a přečkat noc jako pravý poutník.
+                    </p>
+                </div>
+                <img src="hostinec.png" class="section-icon">
 
-    <section id="obcerstveni">
-        <h2><span class="dropcap-title">O</span> strawie a napoji</h2>
-
-        </div>
-        <div class="section-content reverse">
-
-            <div class="text-block">
-                <p>
-                    Po celý den bude zajištěna krmě i nápoje, aby nikdo z hostí
-                    nestrádal hladem ani žízní – což by byla věc vskutku neveselá.
-                </p>
-
-                <p>
-                    Přivezeš-li vlastní dobroty, sladké či slané, budeme potěšeni
-                    a rádi jimi doplníme večerní hodování.
-                </p>
             </div>
 
-            <img src="prase.png" class="section-icon">
 
+
+        </section>
+
+        <div class="divider">
+            <span class="diamond">◆</span>
+            <div class="line"></div>
+            <span class="ornament">❦</span>
+            <div class="line"></div>
+            <span class="diamond">◆</span>
         </div>
+
+        <section id="obcerstveni">
+            <h2><span class="dropcap-title">O</span> strawie a napoji</h2>
+
+    <div class="section-content reverse">
+
+        <div class="text-block">
+            <p>
+                Po celý den bude zajištěna krmě i nápoje, aby nikdo z hostí
+                nestrádal hladem ani žízní – což by byla věc vskutku neveselá.
+            </p>
+
+            <p>
+                Přivezeš-li vlastní dobroty, sladké či slané, budeme potěšeni
+                a rádi jimi doplníme večerní hodování.
+            </p>
+        </div>
+
+        <img src="prase.png" class="section-icon">
+
+    </div>
 
     </section>
 
@@ -437,6 +457,8 @@
             jak se naše cesty spojily.
         </p>
     </section>
+
+    </div>
 
     <footer>
         Těšíme se na vás.
