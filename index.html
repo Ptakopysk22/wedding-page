@@ -205,6 +205,28 @@
             color: currentColor;
         }
 
+        nav {
+            position: sticky;
+            top: 0;
+            background: #e6dcc6;
+            font-family: 'Cinzel', serif;
+            padding: 10px 10px;
+            border-bottom: 1px solid #ccc;
+            z-index: 1000;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px 18px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
         .content-wrapper {
             position: relative;
             max-width: 900px;
@@ -214,7 +236,7 @@
 
         .side-ornament {
             position: absolute;
-            left: 0px;
+            left: 100px;
             top: 0;
             height: 100%;
             width: auto;
@@ -231,7 +253,8 @@
 
             .side-ornament {
                 left: -10px;
-                width: 60px; /*55px*/
+                width: 60px;
+                /*55px*/
                 height: auto;
             }
 
