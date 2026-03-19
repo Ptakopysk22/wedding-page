@@ -10,12 +10,6 @@
         rel="stylesheet">
 
     <style>
-        /*body {
-            font-family: 'Cormorant Garamond', serif;
-            background-color: #f1eadb;
-            color: #2b2118;
-        }*/
-
         body {
             margin: 0;
             background-image: url("pergamen10.png");
@@ -26,8 +20,6 @@
 
         header {
             text-align: center;
-            /* padding: 40px 20px;
-            background-color: #2f2a24;*/
             color: white;
             background-image: url("pergamen2.jpg");
             background-size: cover;
@@ -42,7 +34,6 @@
         }
 
         h2 {
-            /*font-family: 'Cinzel', serif;*/
             font-family: 'UnifrakturCook', cursive;
             font-weight: 600;
             letter-spacing: 1px;
@@ -78,11 +69,6 @@
             margin: 0;
         }
 
-        /*.section-icon {
-            margin-left: auto;
-            width: 200px;
-            padding-right: 30px;
-        }*/
         .section-icon {
             width: 180px;
             padding: 0;
@@ -112,6 +98,10 @@
             font-family: 'UnifrakturCook', cursive;
             font-size: 2em;
             color: #b89b40;
+        }
+
+        section:has(.section-content.reverse) h2 {
+            text-align: right;
         }
 
         .initial-svg {
@@ -150,7 +140,6 @@
             text-align: center;
             padding: 30px 20px;
             font-size: 14px;
-            /*background-color: #2f2a24;*/
             background-image: url("pergamen2.jpg");
             background-size: cover;
             background-position: center;
@@ -161,17 +150,11 @@
             color: #b89b40;
             text-decoration: none;
             font-weight: bold;
-            /* border-bottom: 1px dotted #b89b40;*/
         }
 
         a:hover {
             color: white;
         }
-
-        /*.divider {
-            text-align: center;
-            margin: 20px 0;
-        }*/
 
         .divider {
             display: flex;
@@ -281,7 +264,7 @@
         <p>Středověká svatba</p>
         <p>
             Datum:
-            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Středověká+svatba+M+%26+F&dates=20260926T120000/20260926T230000&details=Středověká+svatba&location=Zřícenina+hradu+Borotín"
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Středověká+svatba+M+%26+F&dates=20260926T110000/20260926T230000&details=Středověká+svatba&location=Zřícenina+hradu+Borotín"
                 target="_blank">
                 26.9.2026
             </a>
@@ -309,6 +292,7 @@
         <a href="#ubytovani">Ubytování</a>
         <a href="#obcerstveni">Občerstvení</a>
         <a href="#dresscode">Dress code</a>
+        <a href="#dar">Dar</a>
         <a href="#rsvp">Účast</a>
     </nav>
 
@@ -409,6 +393,11 @@
                     <p>
                         Přivezeš-li dobroty vlastní, sladké či slané, budeme potěšeni
                         a rádi jimi doplníme večerní hodování.
+                        Případně je zaznamenej do
+                        <a href="https://docs.google.com/spreadsheets/d/1j4VCjrGkVcGJrhmOf1zvGn-_3GkK3u0_MVtB_FcpD60/edit?gid=0#gid=0"
+                            target="_blank">
+                            této listiny
+                        </a>.
                     </p>
                 </div>
 
@@ -554,6 +543,27 @@
 
             </div>
 
+        </section>
+
+        <div class="divider">
+            <span class="diamond">◆</span>
+            <div class="line"></div>
+            <span class="ornament">❦</span>
+            <div class="line"></div>
+            <span class="diamond">◆</span>
+        </div>
+
+        <section id="dar">
+            <h2><span class="dropcap-title">D</span>ar</h2>
+            <div class="section-content">
+
+                <p>
+                    Svou vděčnost můžete vyjádřit darem, nejlépe pěněžním, do truhlice svatební.
+                </p>
+
+                <img src="truhla.png" class="section-icon">
+
+            </div>
         </section>
 
         <div class="divider">
