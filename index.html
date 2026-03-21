@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Středověká svatba F & M</title>
+    <title>Středověká svatba F + M</title>
     <link
         href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Cinzel:wght@400;600&family=Cormorant+Garamond:wght@400;500&family=Grenze+Gotisch:wght@400;600&display=swap"
         rel="stylesheet">
@@ -69,19 +69,36 @@
             margin: 0;
         }
 
-        .section-icon {
+        /*.section-icon {
             width: 180px;
             padding: 0;
             margin-top: 0;
+        }*/
+
+        .section-icon {
+            width: 180px;
+            float: right;
+            margin: 0 0 15px 20px;
+            /* mezera od textu */
+        }
+
+        .section-content.reverse .section-icon {
+            float: left;
+            margin: 0 20px 15px 0;
         }
 
         .section-content {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
+            /* display: flex;*/
+            /* align-items: flex-start;
+            gap: 12px;*/
+            display: block;
         }
 
-        .section-content p {
+        .section-content.float-layout {
+            display: block;
+        }
+
+        /*.section-content p {
             flex: 1;
         }
 
@@ -91,6 +108,12 @@
 
         .text-block {
             flex: 1;
+        }*/
+
+        .section-content::after {
+            content: "";
+            display: block;
+            clear: both;
         }
 
 
@@ -100,7 +123,7 @@
             color: #b89b40;
         }
 
-       /* section:has(.section-content.reverse) h2 {
+        /* section:has(.section-content.reverse) h2 {
             text-align: right;
         }*/
 
